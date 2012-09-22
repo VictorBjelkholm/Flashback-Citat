@@ -854,22 +854,113 @@ table {
 .center {
     text-align: center;
 }
+/****************************************\
+|                  Real CSS              |
+\****************************************/
 
-/* Real CSS */
+/*
+Fonts: 
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('imgs/subtle-pattern-1.jpg');
+}
+
+body a {
+    color: #4E4EF8;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: #0000FF;
+}
+
+#header {
+    padding: 10px;
+    margin: 10px;
+}
+
+#logo {
+    font-size: 22px;
+}
+
+#menu a {
+    margin-right: 50px;
+}
+
+#menu a:last {
+    margin-right: 0px;
+}
 
 #content {
    margin-top: 20px; 
 }
 
 .quote {
-    margin: 10px;
-    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E9E9E9;
+    border: 1px solid #C2C2C2;
+    margin: 30px;
+    padding: 13px;
 }
 
 .quote:last-child {
     border-bottom: 0px;
 }
 
+.quote a {
+    text-decoration: underline;
+}
+
+.quote .meta a {
+    text-decoration: none;
+}
+
 .meta {
     margin-top: 5px;
+}
+
+#submenu a {
+    color: #9D9DFB;
+    margin-left: 50px;
+}
+
+#submenu a:hover {
+    color: #0000FF;
+}
+
+#submenu a.active {
+    color: #4E4EF8;
+    font-weight: bold;
+}
+
+#disqus_thread {
+    margin: 30px;
+}
+
+#send textarea, input {
+    background-color: #E9E9E9;
+    border: 1px solid #C2C2C2;
+    padding: 5px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#scrollFixer {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    bottom: -2px;
+}
+
+#footer {
+    margin-top: 30px;
+    border-top: 3px solid lightgrey;
+    padding: 10px;
+    text-align: right;
 }

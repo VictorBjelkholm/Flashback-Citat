@@ -17,6 +17,12 @@ function getTopQuotes() {
 	return $result;
 }
 
+function getNewQuotes() {
+	$query = "SELECT * FROM citat ORDER BY currentTimestamp DESC LIMIT 0,30"; 
+	$result = mysql_query($query) or die(mysql_error());
+	return $result;
+}
+
 function getSingleQuote($id) {
 	$id = mysql_real_escape_string($id);
 	$query = "SELECT * FROM citat WHERE id = '$id'"; 
