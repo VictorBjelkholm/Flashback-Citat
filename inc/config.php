@@ -4,8 +4,8 @@ require_once("database.php");
 define("header", "inc/header.php");
 define("footer", "inc/footer.php");
 $errorMsg = "Något gick fel, skicka ett mail till admin förfan.";
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
 
 mysql_connect($config['dbhost'], $config['dbuser'], $config['dbpass']) or die(mysql_error());
 mysql_select_db($config['dbname']) or die(mysql_error());

@@ -55,7 +55,6 @@ if(isset($_GET['sort']))
 	} else {
 		if($sort == "top") {
 			?>
-			<h3>Topplista:</h3>
 			<?php
 			$quotes = getTopQuotes();
 			while($row = mysql_fetch_array($quotes)){
@@ -68,7 +67,6 @@ if(isset($_GET['sort']))
 		}
 		elseif($sort == "new") {
 			?>
-			<h3>Nyaste citaten:</h3>
 			<?php
 			$quotes = getNewQuotes();
 			while($row = mysql_fetch_array($quotes)){
